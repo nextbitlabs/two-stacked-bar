@@ -1,6 +1,6 @@
 {
   "name": "@nextbitlabs/two-stacked-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web-component implementation of a two-stacked-bar.",
   "module": "dist/two-stacked-bar.esm.js",
   "scripts": {
