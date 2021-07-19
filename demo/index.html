@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="module">
+			import '../dist/two-stacked-bar.esm.js';
+		</script>
+		<style>
+			/*
+				CSS custom properties penetrate the Shadow DOM.
+				They are useful to provide custom styling.
+			*/
+			two-stacked-bar {
+				--color-top: #999; /* default #999 */
+				--color-bottom: #333; /* default #333 */
+				--background: #eee; /* default transparent */
+			}
+		</style>
+	</head>
+	<body>
+		<two-stacked-bar gap="2" bar-width="2" width="100" height="100" margin="20"></two-stacked-bar>
+		<button>Update</button>
+	</body>
+	<script>
+		const N = 10;
+		const elements = document.querySelectorAll('two-stacked-bar');
+		update(elements);
+
+		function update(elements) {
+			for (const el of elements) {
+				el.data = getRandomData(N);
+			}
+		}
+
+		const button = document.querySelector('button');
+		button.addEventListener('click', event => {
+			update(elements);
+		});
+
+		function getRandomData (length) {
+			return Array.from({length}, getRandomDatum);
+		}
+
+		function getRandomDatum (el, index) {
+			return [index, [Math.random(), Math.random()]];
+		}
+	</script>
+</html>

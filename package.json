@@ -1,0 +1,42 @@
+{
+  "name": "@nextbitlabs/two-stacked-bar",
+  "version": "1.0.0",
+  "description": "Web component implementation of a two-stacked-bar.",
+  "module": "dist/two-stacked-bar.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "xo src/*",
+    "lint-fix": "xo --fix src/*",
+    "release": "np"
+  },
+  "keywords": [
+    "stacked-bar",
+    "arrow",
+    "SVG",
+    "chart",
+    "web-component",
+    "component"
+  ],
+  "author": {
+    "name": "Riccardo Scalco",
+    "email": "riccardoscalco@gmail.com",
+    "url": "http://riccardoscalco.github.io/"
+  },
+  "license": "MIT",
+  "repository": "nextbitlabs/two-stacked-bar",
+  "homepage": "https://github.com/nextbitlabs/two-stacked-bar/",
+  "bugs": "https://github.com/nextbitlabs/two-stacked-bar/issues",
+  "devDependencies": {
+    "np": "^7.5.0",
+    "rollup": "^2.53.2",
+    "xo": "^0.41.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
