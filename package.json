@@ -1,7 +1,7 @@
 {
   "name": "@nextbitlabs/two-stacked-bar",
   "version": "1.0.0",
-  "description": "Web component implementation of a two-stacked-bar.",
+  "description": "Web-component implementation of a two-stacked-bar.",
   "module": "dist/two-stacked-bar.esm.js",
   "scripts": {
     "build": "rollup -c",
@@ -13,7 +13,6 @@
   },
   "keywords": [
     "stacked-bar",
-    "arrow",
     "SVG",
     "chart",
     "web-component",
