@@ -8,7 +8,7 @@ Web component implementation of a two-stacked-bar.
 
 ## Usage
 
-Please have a look at the [demo]().
+Please have a look at the [demo](https://xbbzw.csb.app/).
 
 ## License
 
