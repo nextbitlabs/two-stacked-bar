@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Web-component implementation of a two-stacked-bar.",
   "module": "dist/two-stacked-bar.esm.js",
+  "exports": { "import": "./dist/two-stacked-bar.esm.js" },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
